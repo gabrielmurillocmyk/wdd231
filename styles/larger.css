@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  #course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

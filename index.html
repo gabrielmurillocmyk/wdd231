@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Course homepage for WDD231">
+  <meta name="author" content="Gabriel Murillo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 Home</title>
+
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="Site Logo">
+    <span>Gabriel Murillo</span>
+    <button id="menu-toggle">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chamber/index.html">Chamber Project</a>
+      <a href="final/index.html">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>About Me</h2>
+      <p>Write your intro here...</p>
+    </section>
+    <section>
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Gabriel working on a project">
+    </section>
+    <section>
+      <h2>Web Certificate Courses</h2>
+      <div id="course-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <div id="course-list"></div>
+      <p>Total Credits: <span id="total-credits"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year"></span> Gabriel Murillo • Ecuador</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
