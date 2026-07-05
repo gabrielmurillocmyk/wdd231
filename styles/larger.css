@@ -1,18 +1,155 @@
 @media (min-width: 768px) {
-  nav {
-    display: flex;
-    gap: 1rem;
-  }
-
-  main {
+  /* Header: two rows */
+  header {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    grid-template-rows: auto auto;
+    padding: 1rem;
   }
 
+  .branding {
+    justify-content: flex-start;
+    font-size: 1.8rem;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+   nav {
+    display: flex;
+    flex-direction: row;   /* side by side */
+    justify-content: left; /* center the links */
+    gap: 2rem;             /* spacing between links */
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+
+  /* Main split: About left, Photo right */
+  main {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%; /* prevent horizontal scroll */
+  }
+
+  /* Ensure h1 takes its own line */
+  main h1 {
+    background-color: #2c3e50;   
+    color: #ecf0f1;              
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+  }
+
+  /* Two-column layout for photo + about */
+  .about,
+  .photo {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .photo {
+    width: 25%;
+    margin-right: 2%;
+    background-color: #f4f6f7;  
+    padding: 2cap;
+    border-radius: 6px;
+  }
+
+  .about {
+    width: 65%;
+    background-color: #f4f6f7;
+    padding: 2rem;
+    border-radius: 6px;
+  }
+
+   .about h2, .photo h2, .courses h2 {
+    color: #34495e;              /* sober dark slate */
+    border-bottom: 4px solid #bdc3c7;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+   }
+    
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Courses section spans full width below */
+  .courses {
+    clear: both;
+    margin-top: 2rem;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  /* Course grid */
   #course-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 1rem;
+  }  
+
+   .course-card {
+   padding: 1rem;
+   border-radius: 6px;
+   text-align: center;
+   font-weight: bold;
+  }
+
+  .completed {
+    background-color: #d5f5e3;   /* soft green for approved */
+    border: 2px solid #27ae60;   /* darker green border */
+    color: #145a32;
+  }
+
+  .incomplete {
+    background-color: #f9e79f;   /* soft amber for not approved */
+    border: 2px solid #b7950b;   /* darker amber border */
+    color: #7d6608;
+  }
+  .courses p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .about p {
+  font-size: 1.2rem;   /* larger text for readability */
+  line-height: 1.8;    /* more breathing space */
+  color: #2c3e50;      /* sober dark slate */
+  }
+  
+  #course-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* sober gradient */
+  color: #ecf0f1;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+ }
+
+  #course-buttons button:hover {
+  background: linear-gradient(135deg, #1abc9c, #16a085); /* subtle highlight */
+  transform: scale(1.05); /* gentle hover effect */
+ }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    color: #fff;
+  }
+
+  footer .social {
+    margin-bottom: 1rem;
   }
 }

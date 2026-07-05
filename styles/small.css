@@ -1,36 +1,48 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #fdfdfd;
+  background: #fdfdfd;
   color: #333;
   line-height: 1.6;
-  padding: 0 1rem; /* prevent text touching edges */
+  padding: 0 1rem;
 }
 
-/* Header */
+/* Header stacked */
 header {
   background: #333;
   color: #fff;
   padding: 1rem;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
 }
 
-header img, header span, #menutoggle {
-
-  height: 40px;
-  font-weight: bold;
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Navigation */
+header img {
+  height: 40px;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
 nav {
   display: none;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 nav.open {
@@ -45,19 +57,20 @@ nav a {
 }
 
 nav a:hover {
-  background: #555; /* no twitching, smooth hover */
+  background: #555;
 }
 
 /* Sections */
-main {
-  margin: 1rem 0;
-}
-
 section {
   margin-bottom: 2rem;
 }
 
-/* Buttons */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Course buttons */
 #course-buttons {
   display: flex;
   justify-content: center;
@@ -69,14 +82,14 @@ section {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #333;
+  background: #333;
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 #course-buttons button:hover {
-  background-color: #555;
+  background: #555;
 }
 
 /* Course cards */
@@ -89,26 +102,39 @@ section {
   font-weight: bold;
 }
 
-.course-card h3 {
-  margin-top: 0;
-}
-
 .completed {
-  background-color: #fff9c4; /* light yellow */
+  background: #fff9c4;
   border: 2px solid #fbc02d;
-  color: #333;
 }
 
 .incomplete {
-  background-color: #ffcc80; /* orange */
+  background: #ffcc80;
   border: 2px solid #ef6c00;
-  color: #333;
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.5rem;
   text-align: center;
-  padding: 1rem;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .social a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+  background-color: #d1e4d8;
+  border-radius: 8px;
+}
+
+footer .social a:hover img {
+  transform: scale(1.2);
 }
