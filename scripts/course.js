@@ -54,7 +54,7 @@ const courses = [
         title: 'Dynamic Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
+        description: 'This course builds on prior expe  rience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
         technology: [
             'HTML',
             'CSS',
@@ -86,13 +86,9 @@ function renderCourses(filter) {
 
   filtered.forEach(c => {
     const div = document.createElement("div");
-    div.className = c.completed ? "completed" : "incomplete";
-    div.innerHTML = `
-      <h3>${c.subject} ${c.number}: ${c.title}</h3>
-      <p><strong>Credits:</strong> ${c.credits}</p>
-      <p>${c.description}</p>
-      <p><strong>Tech:</strong> ${c.technology.join(", ")}</p>
-    `;
+    div.className = c.completed ? "completed course-card" : "incomplete course-card" ;
+    const status = c.completed ? "✓ " : "";
+    div.innerHTML = `<h3>${c.subject} ${c.number}: ${c.title}</h3>`;
     list.appendChild(div);
   });
 
