@@ -28,7 +28,7 @@ header img {
 }
 
 #menu-toggle {
-  background: none;
+  background: gray;
   border: none;
   color: #fff;
   font-size: 1.5rem;
