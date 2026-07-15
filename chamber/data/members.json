@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Panadería Calderón",
+    "address": "Av. Principal 123, Calderón, Ecuador",
+    "phone": "593-555-1111",
+    "email": "info@panaderiacalderon.com",
+    "website": "https://panaderiacalderon.com",
+    "image": "bakery.jpg",
+    "membership": "1",
+    "tagline": "Fresh bread daily"
+  },
+  {
+    "name": "Tech Solutions",
+    "address": "Calle Secundaria 45, Calderón, Ecuador",
+    "phone": "593-555-2222",
+    "email": "support@techsolutions.ec",
+    "website": "https://techsolutions.ec",
+    "image": "tech.jpg",
+    "membership": "2",
+    "tagline": "Your IT partner"
+  },
+  {
+    "name": "Eco Tours",
+    "address": "Ruta Verde 12, Calderón, Ecuador",
+    "phone": "593-555-3333",
+    "email": "contact@ecotours.ec",
+    "website": "https://ecotours.ec",
+    "image": "ecotours.jpg",
+    "membership": "3",
+    "tagline": "Discover nature responsibly"
+  },
+  {
+    "name": "Calderón Fitness",
+    "address": "Av. Salud 88, Calderón, Ecuador",
+    "phone": "593-555-4444",
+    "email": "info@calderonfitness.ec",
+    "website": "https://calderonfitness.ec",
+    "image": "fitness.jpg",
+    "membership": "1",
+    "tagline": "Stay strong, stay healthy"
+  },
+  {
+    "name": "Green Market",
+    "address": "Mercado Central, Calderón, Ecuador",
+    "phone": "593-555-5555",
+    "email": "sales@greenmarket.ec",
+    "website": "https://greenmarket.ec",
+    "image": "market.jpg",
+    "membership": "2",
+    "tagline": "Organic produce for all"
+  },
+  {
+    "name": "Hotel Calderón",
+    "address": "Plaza Mayor 9, Calderón, Ecuador",
+    "phone": "593-555-6666",
+    "email": "info@hotelcalderon.ec",
+    "website": "https://hotelcalderon.ec",
+    "image": "hotel.jpg",
+    "membership": "3",
+    "tagline": "Comfort in the heart of Calderón"
+  },
+  {
+    "name": "Creative Studio",
+    "address": "Av. Arte 77, Calderón, Ecuador",
+    "phone": "593-555-7777",
+    "email": "hello@creativestudio.ec",
+    "website": "https://creativestudio.ec",
+    "image": "studio.jpg",
+    "membership": "2",
+    "tagline": "Designs that inspire"
+  }
+]

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 48rem) {
+  #menuButton {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .directory-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .directory-grid.list {
+    display: block;
+  }
+
+  .directory-grid.list article {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+  .directory-grid article {
+    transition: transform 0.3s ease;
+  }
+
+  .directory-grid article:hover {
+    transform: scale(1.03);
+  }
+}

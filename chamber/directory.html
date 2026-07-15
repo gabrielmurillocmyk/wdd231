@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calderón Chamber of Commerce Directory</title>
+  <meta name="description" content="Explore local businesses and services in Calderón through the Chamber of Commerce directory.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Calderón Chamber of Commerce Directory">
+  <meta property="og:description" content="Discover businesses and services in Calderón. Join the Chamber to connect, grow, and thrive.">
+  <meta property="og:image" content="https://yourgithubrepo.github.io/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourgithubrepo.github.io/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles-cd/normalize.css">
+  <!-- Mobile-first CSS -->
+  <link rel="stylesheet" href="styles-cd/small.css">
+  <!-- Larger view CSS -->
+  <link rel="stylesheet" href="styles-cd/larger.css">
+
+  <!-- JS -->
+  <script src="scripts-cd/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Calderón Chamber of Commerce</h1>
+    <button id="menuButton">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Directory</h2>
+    <div class="view-toggle">
+      <button id="gridView">Grid</button>
+      <button id="listView">List</button>
+    </div>
+    <section class="directory-grid" id="members"></section>
+  </main>
+
+  <footer>
+    <p>Calderón Chamber of Commerce<br>
+    123 Main Street<br>
+    Calderón, Ecuador<br>
+    info@calderonchamber.org<br>
+    (593) 555-1234</p>
+
+    <div class="social-icons">
+      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+
+    <p>WDD231 Class Project<br>
+    Gabriel Murillo<br>
+    &copy;<span id="year"></span> Calderón Chamber of Commerce<br>
+    Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
