@@ -5,7 +5,7 @@
     "phone": "593-555-1111",
     "email": "info@panaderiacalderon.com",
     "website": "https://panaderiacalderon.com",
-    "image": "bakery.jpg",
+    "image": "bakery.png",
     "membership": "1",
     "tagline": "Fresh bread daily"
   },
@@ -15,7 +15,7 @@
     "phone": "593-555-2222",
     "email": "support@techsolutions.ec",
     "website": "https://techsolutions.ec",
-    "image": "tech.jpg",
+    "image": "tech.png",
     "membership": "2",
     "tagline": "Your IT partner"
   },
