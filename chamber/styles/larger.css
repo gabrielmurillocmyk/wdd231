@@ -70,4 +70,26 @@ nav li a {
   .directory-grid article:hover {
     transform: scale(1.03);
   }
+   .footer-container {
+    display: flex;
+    justify-content: space-between; /* left, center, right */
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-contact, .footer-meta {
+    flex: 1; /* left and right take equal space */
+  }
+
+  .footer-social-icons {
+    flex: 0 0 auto; /* center stays tight */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-social img {
+    width: 32px;
+    height: 32px;
+  }
 }

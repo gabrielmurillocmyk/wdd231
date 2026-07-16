@@ -17,12 +17,14 @@
   <meta property="og:url" content="https://gabrielmurillocmyk.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
 
-  <!-- Normalize CSS -->
+  
   <link rel="stylesheet" href="styles/normalize.css">
-  <!-- Mobile-first CSS -->
   <link rel="stylesheet" href="styles/small.css">
-  <!-- Larger view CSS -->
   <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- JS -->
   <script src="scripts/directory.js" defer></script>
@@ -55,22 +57,33 @@
   </main>
 
   <footer>
-    <p>Calderón Chamber of Commerce<br>
-    123 Main Street<br>
-    Calderón, Ecuador<br>
-    info@calderonchamber.org<br>
-    (593) 555-1234</p>
+    <div class="footer-container">
+      <div class="footer-contact">
+      <p>Calderón Chamber of Commerce<br>
+      123 Main Street<br>
+      Calderón, Ecuador<br>
+      info@calderonchamber.org<br>
+      (593) 555-1234</p>
+      </div>
 
-    <div class="social-icons">
-      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
-      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-      <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-    </div>
-
+      <div class="social-icons">
+        <a href="https://instagram.com">
+        <img src="images/instagram.svg" alt="Visit our Instagram profile">
+        </a>
+        <a href="https://twitter.com/yourprofile">
+        <img src="images/twitter.svg" alt="Follow us on Twitter for updates">
+        </a>
+        <a href="https://linkedin.com">
+        <img src="images/linkedin.svg" alt="Connect with us on LinkedIn">
+        </a>
+      </div>
+      <div class="footer-meta">
     <p>WDD231 Class Project<br>
     Gabriel Murillo<br>
     &copy;<span id="year"></span> Calderón Chamber of Commerce<br>
     Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </div>
   </footer>
 </body>
 </html>

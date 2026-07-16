@@ -25,7 +25,7 @@
     "phone": "593-555-3333",
     "email": "contact@ecotours.ec",
     "website": "https://ecotours.ec",
-    "image": "ecotours.jpg",
+    "image": "ecotours.png",
     "membership": "3",
     "tagline": "Discover nature responsibly"
   },
@@ -35,7 +35,7 @@
     "phone": "593-555-4444",
     "email": "info@calderonfitness.ec",
     "website": "https://calderonfitness.ec",
-    "image": "fitness.jpg",
+    "image": "fitness.png",
     "membership": "1",
     "tagline": "Stay strong, stay healthy"
   },
@@ -55,7 +55,7 @@
     "phone": "593-555-6666",
     "email": "info@hotelcalderon.ec",
     "website": "https://hotelcalderon.ec",
-    "image": "hotel.jpg",
+    "image": "hotel.png",
     "membership": "3",
     "tagline": "Comfort in the heart of Calderón"
   },
