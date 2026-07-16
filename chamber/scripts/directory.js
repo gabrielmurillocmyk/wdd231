@@ -20,19 +20,27 @@ async function loadMembers() {
 
     container.innerHTML = "";
     members.forEach(member => {
-      const card = document.createElement("article");
-      card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}">
-        <h2>${member.name}</h2>
-        <p class="tagline">${member.tagline}</p>
-        <p>${member.address}</p>
-        <p>Phone: ${member.phone}</p>
-        <p>Email: ${member.email}</p>
-        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-        <p>Membership Level: ${member.membership}</p>
-      `;
-      container.appendChild(card);
-    });
+    const card = document.createElement("article");
+    card.classList.add("member-card");
+    card.innerHTML = `
+      <h2>${member.name}</h2>
+      <p class="tagline">${member.tagline}</p>
+      <hr>
+      <div class="card-body">
+        <div class="card-image">
+          <img src="images/${member.image}" alt="${member.name}">
+      </div>
+      <div class="card-info">
+        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Membership Level:</strong> ${member.membership}</p>
+      </div>
+    </div>
+  `;
+  container.appendChild(card);
+});
+
   } catch (error) {
     console.error("Error loading members:", error);
   }
