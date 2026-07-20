@@ -151,15 +151,6 @@ main h1 {
   margin: 0 auto 1rem; /* centers the logo and adds spacing */
 }
 
-.cta-button {
-  background: #724603;
-  color: #fff;
-  padding: 0.75rem 1.25rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 700;
-  }
-
 .spotlight {
   background: #f9f9f9;
   border: 1px solid #ccc;
