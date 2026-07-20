@@ -1,8 +1,8 @@
 const apiKey = 'YOUR_API_KEY';
-const city = 'Caleron,EC';
+const city = 'Quito,EC';
 
 async function fetchWeather() {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Quito,EC&units=metric&appid=${apiKey}`);
   const data = await response.json();
 
   const weatherSection = document.getElementById('weather');

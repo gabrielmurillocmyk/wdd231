@@ -101,9 +101,9 @@ footer {
 
 main h1 {
   text-align: center;
-   margin: 1rem 0;
+  margin: 1rem 0;
   font-size: 1.5rem;
-  color: #0f041d;
+  color: #e4b36b;
 }
 .directory-grid article .tagline {
   font-style: italic;
@@ -119,6 +119,36 @@ main h1 {
 .directory-grid article:hover {
   background-color: rgba(173, 180, 153, 0.7); 
   transition: background-color 0.5s ease;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color:#063e42;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* negro con 50% transparencia */
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.spotlight img {
+  max-width: 250px;   /* or whatever size fits your design */
+  height: auto;       /* keeps proportions */
+  display: flex;
+  margin: 0 auto 1rem; /* centers the logo and adds spacing */
 }
 
 
