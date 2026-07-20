@@ -1,9 +1,10 @@
-const apiKey = 'YOUR_API_KEY';
+const apiKey = 'eec2a7194e0bd23b5cbfaa8d522b882a';
 const city = 'Quito,EC';
 
 async function fetchWeather() {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Quito,EC&units=metric&appid=${apiKey}`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`);
   const data = await response.json();
+  console.log("Weather API response:", data); 
 
   const weatherSection = document.getElementById('weather');
   const current = data.list[0];
