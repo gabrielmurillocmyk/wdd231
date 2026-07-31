@@ -60,3 +60,4 @@ gridBtn.addEventListener("click", () => {
 listBtn.addEventListener("click", () => {
   directory.classList.add("list");
 });
+

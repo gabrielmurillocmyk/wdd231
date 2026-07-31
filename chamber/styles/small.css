@@ -10,6 +10,7 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .social-icons img {
@@ -137,7 +138,7 @@ main h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7); /* negro con 50% transparencia */
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -145,10 +146,10 @@ main h1 {
 }
 
 .spotlight img {
-  max-width: 250px;   /* or whatever size fits your design */
-  height: auto;       /* keeps proportions */
+  max-width: 250px;   
+  height: auto;       
   display: flex;
-  margin: 0 auto 1rem; /* centers the logo and adds spacing */
+  margin: 0 auto 1rem; 
 }
 
 .spotlight {
@@ -156,5 +157,194 @@ main h1 {
   border: 1px solid #ccc;
   padding: 1rem;
   }
+
+.join {
+  display: block;
+  margin-top: 2rem;
+  max-width: 95%;
+ }
+.join-left, .join-right {
+  margin: 2rem;
+  background: #f6f7f6; 
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+.join-left form {
+  padding: 2 rem;
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  gap: 1rem;
+}
+.join-right membership-cards{
+  padding: 2rem;
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-left label {
+  display: flex;
+  flex-direction: column; /* stack text above input */
+  font-weight: 502;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.join-left input[type="submit"] {
+  width: 100%; /* full width for mobile */
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f8f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: opacity 1.5s ease, transform 0.5s ease, box-shadow 0.3s, background-color 0.3s ease; 
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Different border colors */
+.card.np {
+  border-color: #4caf50; /* green */
+}
+.card.bronze {
+  border-color: #cd7f32; /* bronze */
+}
+.card.silver {
+  border-color: #afadad; /* silver */
+}
+.card.gold {
+  border-color: #d8c247; /* gold */
+}
+
+/* Hover effect: background tint */
+.card.np:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+.card.bronze:hover {
+  background-color: rgba(205, 127, 50, 0.1);
+}
+.card.silver:hover {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+.card.gold:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.04); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* stronger shadow */
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4472a0;
+  text-decoration: underline;
+}
+
+/* Modal styling */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: 2px solid #227ad3;
+  background-color: #f0f8ff;
+}
+
+.join-left input[type="text"],
+.join-left input[type="email"],
+.join-left input[type="tel"],
+.join-left textarea,
+.join-left select {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-left input:focus,
+.join-left textarea:focus,
+.join-left select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 6px rgba(0,102,204,0.4);
+  outline: none;
+}
+
+.join-left input[type="submit"] {
+  background: #063e42;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-left input[type="submit"]:hover {
+  background-color: #0a5a60;
+  transform: scale(1.05);
+}
+
+.thankyou {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.thankyou h1 {
+  text-align: center;
+  color: #063e42;
+}
+
+.thankyou ul {
+  list-style: none;
+  padding: 0;
+}
+
+.thankyou li {
+  margin: 0.5rem 0;
+}
+
+
 
 

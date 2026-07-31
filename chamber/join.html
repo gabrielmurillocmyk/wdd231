@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calderón Chamber of Commerce - Join</title>
+  <meta name="description" content="oin the Chamber today, connect, grow, and thrive with a supportive business community.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Calderón Chamber of Commerce - Together We Prosper">
+  <meta property="og:description" content="Discover Calderón's thriving business community. Network, learn, and prosper with the Chamber of Commerce">
+  <meta property="og:image" content="https://gabrielmurillocmyk.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://gabrielmurillocmyk.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <!-- Consistent Header -->
+  <header>
+    <div class="branding">
+      <img src="images/og-image.png" alt="Chamber Logo" class="logo">
+      <span class="site-title">Calderón Chamber of Commerce</span>
+    </div>
+    <button id="menuButton">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+  <section class="join">
+  <div class="join-left">
+  <h2>Membership Application form</h2>
+
+  <form method="get" action="thankyou.html">
+   
+    <label>
+      First Name:
+      <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+    </label>
+
+    <label>
+      Organizational Title:
+      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+             pattern="[A-Za-z\\-\\s]{7,}">
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" title="Email Address" autocomplete="email" required
+             placeholder="example@domain.com">
+    </label>
+
+    <label>
+      Mobile Phone:
+      <input type="tel" name="mobile" pattern="[0-9]{9,}" title="Enter a valid phone number">
+    </label>
+
+    <label>
+      Organization Name:
+      <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+    </label>
+    
+    <label>
+    <select name="membership" title="Membership Level" required>
+      <option value="">-- Select a level --</option>
+      <option value="np">NP Membership (Non-Profit, no fee)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+    </label>
+
+    <label>
+    Organization Description:
+    <textarea name="description" title="Organization Description"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <input type="submit" value="Submit Application" disabled>
+    </form>
+    </div>
+ 
+  <div class="join-right">
+  <h2>Membership Levels</h2>
+    <div class="card np">
+    <h3>Non Profit Membership</h3>
+    <p>No fee for non-profits</p>
+    <a href="#npModal">Learn more</a>
+    </div>
+    <div class="card bronze">
+    <h3>Bronze Membership</h3>
+    <p>Entry-level benefits</p>
+    <a href="#bronzeModal">Learn more</a>
+    </div>
+    <div class="card silver">
+    <h3>Silver Membership</h3>
+    <p>Expanded benefits</p>
+    <a href="#silverModal">Learn more</a>
+    </div>
+    <div class="card gold">
+    <h3>Gold Membership</h3>
+    <p>Premium benefits</p>
+    <a href="#goldModal">Learn more</a>
+    </div>
+
+  <div id="npModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>Access to networking events</li>
+        <li>Community recognition</li>
+        <P>Annual fee: $0</P>
+      </ul>
+    </div>
+  </div>
+
+  <div id="bronzeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Event discounts</li>
+        <li>Basic advertising opportunities</li>
+        <li>Monthly newsletter with business updates</li>
+        <li>Listing in the chamber's online directory</li>
+        <P>Annual fee: $120</P>
+      </ul>
+    </div>
+  </div>
+
+  <div id="silverModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>All Bronze benefits included</li>
+        <li>Spotlight positions on homepage</li>
+        <li>Training sessions</li>
+        <li>Invitations to exclusive training sessions and seminars</li>
+        <P>Annual fee: $250</P>
+      </ul>
+    </div>
+  </div>
+
+  <div id="goldModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Premium advertising opportunities (homepage banners, featured posts)</li>
+        <li>Exclusive events</li>
+        <li>Maximum discounts</li>
+        <li>Sponsorship recognition at major chamber events</li>
+        <li>Exclusive access to VIP networking receptions</li>
+        <P>Annual fee: $500</P>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+  </section>
+  
+  
+
+
+
+
+     </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p>Calderón Chamber of Commerce<br>
+        123 Main Street<br>
+        Calderón, Ecuador<br>
+        info@calderonchamber.org<br>
+        (593) 555-1234</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://instagram.com">
+          <img src="images/instagram.svg" alt="Visit our Instagram profile">
+        </a>
+        <a href="https://twitter.com/yourprofile">
+          <img src="images/twitter.svg" alt="Follow us on Twitter for updates">
+        </a>
+        <a href="https://linkedin.com">
+          <img src="images/linkedin.svg" alt="Connect with us on LinkedIn">
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <p>WDD231 Class Project<br>
+        Gabriel Murillo<br>
+        &copy;<span id="year"></span> Calderón Chamber of Commerce<br>
+        Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
