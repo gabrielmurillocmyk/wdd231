@@ -1,14 +1,4 @@
-class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3>Gold Membership Benefits</h3>
-      <ul>
-        <li>Premium advertising opportunities (homepage banners, featured posts)</li>
-        <li>Exclusive events</li>
-        <li>Maximum discounts</li>
-        <li>Sponsorship recognition at major chamber events</li>
-        <li>Exclusive access to VIP networking receptions</li>
-        <li>Annual f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -92,8 +82,8 @@ class="modal">
 
     <label>
       Mobile Phone:
-      <input type="tel" name="mobile" required pattern="09[0-9]{8}$" title="Enter a valid Ecuadorian mobile number"  id="mobile" autocomplete="tel">
-
+      <input type="tel" name="mobile" required pattern="[0-9]{10}" title="Enter a valid phone number" id="mobile" autocomplete="tel">
+      
     </label>
 
     <label>
@@ -118,7 +108,7 @@ class="modal">
 
     <input type="hidden" name="timestamp" id="timestamp">
 
-    <input type="submit" value="Submit Application">
+    <input type="submit" value="Submit Application" disabled>
     </form>
     </div>
  
@@ -185,7 +175,17 @@ class="modal">
     </div>
   </div>
 
-  <div id="goldModal" ee: $500</li>
+  <div id="goldModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Premium advertising opportunities (homepage banners, featured posts)</li>
+        <li>Exclusive events</li>
+        <li>Maximum discounts</li>
+        <li>Sponsorship recognition at major chamber events</li>
+        <li>Exclusive access to VIP networking receptions</li>
+        <li>Annual fee: $500</li>
 
       </ul>
     </div>
