@@ -12,6 +12,14 @@ h1, h2, h3 {
   margin-bottom: 0.5rem;
   text-align: center;
 }
+h1 {
+  text-align: center;
+  color: #063e42;        
+  font-size: 2rem;     
+  font-weight: 500;      
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;   
+}
 
 .social-icons img {
   padding: 0.3rem;
@@ -100,12 +108,6 @@ footer {
   margin-top: 2rem;
 }
 
-main h1 {
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  color: #e4b36b;
-}
 .directory-grid article .tagline {
   font-style: italic;
   color: #b15815;
@@ -171,7 +173,6 @@ main h1 {
   padding: 2rem;
 }
 .join-left form {
-  padding: 2 rem;
   display: flex;
   margin: 15px;
   flex-direction: column;
@@ -193,11 +194,6 @@ main h1 {
   margin-bottom: 1rem;
 }
 
-.join-left input[type="submit"] {
-  width: 100%; /* full width for mobile */
-  padding: 0.75rem;
-  font-size: 1rem;
-}
 .membership-cards {
   display: flex;
   flex-direction: column;
@@ -309,6 +305,9 @@ input:focus, textarea:focus, select:focus {
 }
 
 .join-left input[type="submit"] {
+  width: 100%; 
+  padding: 0.75rem;
+  font-size: 1rem;
   background: #063e42;
   color: white;
   border: none;
@@ -321,6 +320,11 @@ input:focus, textarea:focus, select:focus {
   transform: scale(1.05);
 }
 
+ul li:last-child {
+  border-top: 1px solid #ccc;
+  margin-top: 0.5rem;          
+  padding-top: 0.5rem;         
+}
 .thankyou {
   max-width: 600px;
   margin: 2rem auto;
@@ -344,6 +348,7 @@ input:focus, textarea:focus, select:focus {
 .thankyou li {
   margin: 0.5rem 0;
 }
+
 
 
 
