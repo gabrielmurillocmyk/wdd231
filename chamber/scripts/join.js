@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach((card, i) => {
     setTimeout(() => {
       card.classList.add("show");
-    }, i * 300); // staggered animation
+    }, i * 300); 
   });
 
   // Modal functionality
@@ -44,10 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
-    timestampField.value = Date.now();
+    timestampField.value = new Date().toISOString();
   }
 });
-
 
 });
 
