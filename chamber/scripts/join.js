@@ -36,15 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = form.querySelector('input[type="submit"]');
   const timestampField = document.getElementById("timestamp");
 
-  if (timestampField) {
-    timestampField.value = Date.now();
-  }
-
-  submitBtn.disabled = !form.checkValidity();
-
+  
 
   form.addEventListener('input', () => {
     submitBtn.disabled = !form.checkValidity();
   });
+  
+  if (timestampField) {
+    timestampField.value = new Date().toISOString();
+  }
 });
 
