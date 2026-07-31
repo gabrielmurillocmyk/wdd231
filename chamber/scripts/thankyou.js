@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
 
-  // Grab all fields from the query string
   const firstName = params.get("firstName");
   const lastName = params.get("lastName");
   const email = params.get("email");
@@ -10,24 +9,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const membership = params.get("membership");
   const timestamp = params.get("timestamp");
 
-  // Format the date nicely
+
   let formattedDate = "Not available";
   if (timestamp) {
     const dateObj = new Date(Number(timestamp));
     if (!isNaN(dateObj)) {
       formattedDate = new Intl.DateTimeFormat("es-EC", {
-        weekday: "long",   // viernes
-        year: "numeric",   // 2026
-        month: "long",     // julio
-        day: "numeric",    // 31
-        hour: "numeric",   // 12
-        minute: "2-digit", // 46
-        hour12: true       // formato AM/PM
+        weekday: "long",   
+        year: "numeric",   
+        month: "long",   
+        day: "numeric",    
+        hour: "numeric",   
+        minute: "2-digit", 
+        hour12: true  
       }).format(dateObj);
     }
   }
 
-  // Build confirmation HTML
   document.getElementById("confirmation").innerHTML = `
     <ul style="list-style-type:none; padding-left:0;">
       <li><strong>Nombre:</strong> ${firstName || ""} ${lastName || ""}</li>
