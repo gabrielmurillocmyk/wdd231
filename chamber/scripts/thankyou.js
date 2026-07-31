@@ -5,35 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastName = params.get("lastName");
   const email = params.get("email");
   const mobile = params.get("mobile");
-  const businessName = params.get("businessName");
-  const membership = params.get("membership");
+  const organization = params.get("organization");
   const timestamp = params.get("timestamp");
 
-
-  let formattedDate = "Not available";
-  if (timestamp) {
-    const dateObj = new Date(Number(timestamp));
-    if (!isNaN(dateObj)) {
-      formattedDate = new Intl.DateTimeFormat("es-EC", {
-        weekday: "long",   
-        year: "numeric",   
-        month: "long",   
-        day: "numeric",    
-        hour: "numeric",   
-        minute: "2-digit", 
-        hour12: true  
-      }).format(dateObj);
-    }
-  }
-
   document.getElementById("confirmation").innerHTML = `
-    <ul style="list-style-type:none; padding-left:0;">
-      <li><strong>Nombre:</strong> ${firstName || ""} ${lastName || ""}</li>
-      <li><strong>Email:</strong> ${email || ""}</li>
-      <li><strong>Móvil:</strong> ${mobile || ""}</li>
-      <li><strong>Negocio:</strong> ${businessName || ""}</li>
-      <li><strong>Membresía:</strong> ${membership || ""}</li>
-      <li><strong>Fecha de envío:</strong> ${formattedDate}</li>
+    <h2>Confirmation Details</h2>
+    <ul>
+      <li><strong>First Name:</strong> ${firstName}</li>
+      <li><strong>Last Name:</strong> ${lastName}</li>
+      <li><strong>Email:</strong> ${email}</li>
+      <li><strong>Mobile Phone:</strong> ${mobile}</li>
+      <li><strong>Organization:</strong> ${organization}</li>
+      <li><strong>Date Submitted:</strong> ${new Date(timestamp).toLocaleString()}</li>
     </ul>
     <a href="index.html" class="button">Back to Home</a>
   `;
