@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach((card, i) => {
     setTimeout(() => {
       card.classList.add("show");
-    }, i * 300); // staggered animation
+    }, i * 300); 
   });
 
-  // Modal functionality
+ 
   const modals = document.querySelectorAll(".modal");
   const links = document.querySelectorAll(".card a");
   const closes = document.querySelectorAll(".close");
@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     timestampField.value = new Date().toISOString();
   }
 });
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
 
 
 });
