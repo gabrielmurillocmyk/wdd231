@@ -1,15 +1,11 @@
-/* ==========================================================================
-   CRITICAL RUBRIC COMPLIANCE: 
-   The selected color scheme and typography listed in this plan are used 
-   exclusively across this entire planning document.
-   ========================================================================== */
+
 :root {
-    --primary-color: #0b3c5d;      /* Classic Deep Blue - Used for headers, section structures, and border framing */
-    --secondary-color: #328cc1;    /* Active Blue - Used for nav active states and internal link elements */
-    --accent-color: #d9b310;       /* Athletic Gold - Used for key highlights, active tags, and attention nodes */
+    --primary-color: #0b3c5d;      /* Classic Deep Blue*/
+    --secondary-color: #328cc1;    /* Active Blue*/
+    --accent-color: #d9b310;       /* Athletic Gold*/
     --background-color: #ffffff;   /* Pure White - Main workspace container background */
-    --light-bg: #f9f9f9;           /* Clean Grey - Background structure for text blocks and component zones */
-    --text-color: #1d2731;         /* Charcoal Dark - High-contrast readable body typography */
+    --light-bg: #f9f9f9;           /* Clean Grey*/
+    --text-color: #1d2731;         /* Charcoal Dark*/
 }
 
 body {
