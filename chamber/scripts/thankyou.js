@@ -7,6 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobile = params.get("mobile");
   const organization = params.get("organization");
   const timestamp = params.get("timestamp");
+    let formattedDate = "Not available";
+    if (timestamp) {
+    const dateObj = new Date(Number(timestamp));  
+    if (!isNaN(dateObj)) {
+      formattedDate = new Intl.DateTimeFormat("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+    }).format(dateObj);
+  }
+}
 
   document.getElementById("confirmation").innerHTML = `
     <h2>Confirmation Details</h2>
@@ -21,3 +36,4 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="index.html" class="button">Back to Home</a>
   `;
 });
+

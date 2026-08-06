@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
-    timestampField.value = new Date().toISOString();
+    timestampField.value = Date.now();
   }
 });
 document.querySelector("#year").textContent = new Date().getFullYear();
