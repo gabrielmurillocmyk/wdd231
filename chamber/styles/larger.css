@@ -124,13 +124,10 @@ nav li a {
       gap: 1rem;
     }
 
-  /* ==========================================================================
-   DISCOVER PAGE LARGE / DESKTOP VIEWPORT LAYOUT MATRIX (100% Full Width)
-   ========================================================================== */
+  
 @media (min-width: 1025px) {
-  /* Allow the main content section to consume 100% width across the display screen */
   .discover-main {
-    max-width: 100% !important; /* Forces layout past any generic container caps */
+    max-width: 100%;
     width: 100%;
     padding: 1rem 2.5rem; /* Generates clean side breathing room space */
     box-sizing: border-box;

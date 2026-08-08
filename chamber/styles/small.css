@@ -395,6 +395,7 @@ input:focus, textarea:focus, select:focus {
   border-bottom: 4px solid #063e42;
 }
 
+
 /* Card Title Typography */
 .place-card h2 {
   font-family: 'Montserrat', sans-serif;
