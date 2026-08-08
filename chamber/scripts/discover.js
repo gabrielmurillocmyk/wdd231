@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
   handleVisitorTracking();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('menuButton');
+  const navElement = document.querySelector('nav');
+
+  if (menuButton && navElement) {
+    menuButton.addEventListener('click', () => {
+      navElement.classList.toggle('open');
+    });
+  }
+});
+
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
 
