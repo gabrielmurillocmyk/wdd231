@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calderón Chamber of Commerce - Discover</title>
+  <meta name="description" content="Discover Calderón, located in the northern area of Quito, Ecuador. Explore demographics, cultural heritage checkpoints, and local landmarks.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Calderón Chamber of Commerce - Discover Together">
+  <meta property="og:description" content="Explore Calderón's thriving district layout, community demographics, and historical milestones in northern Quito.">
+  <meta property="og:image" content="https://gabrielmurillocmyk.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://gabrielmurillocmyk.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+  <!-- Consistent Header -->
+  <header>
+    <div class="branding">
+      <img src="images/og-image.png" alt="Chamber Logo" class="logo">
+      <span class="site-title">Calderón Chamber of Commerce</span>
+    </div>
+    <button id="menuButton">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+    <main class="discover-main">
+    <h1>Discover Calderón, Northern Quito</h1>
+    
+    <div class="discover-content">
+      <!-- Info Left Sidebar Matrix -->
+      <aside class="discover-sidebar">
+        <div class="sidebar-card">
+          <h2>Visitor Insights</h2>
+          <p id="visit-message">Processing your visitor activity details...</p>
+        </div>
+        
+        <div class="sidebar-card">
+          <h2>Quick Demographics</h2>
+          <p><strong>Location:</strong> Northern area of Quito - Ecuador.</p>
+          <p><strong>Population:</strong> Approximately 250,000 residents.</p>
+          <p><strong>Primary Industry:</strong> Famous artisanal wood carving and decorative mazapán craft economies.</p>
+          <p><strong>Climate:</strong> Temperate and dry high-altitude valley weather.</p>
+        </div>
+      </aside>
+
+      <!-- Dynamic Cards Grid Destination Target Container Area -->
+      <section id="places-container" class="discover-grid">
+        <!-- Built dynamically via JavaScript modular pipelines -->
+      </section>
+    </div>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p>Calderón Chamber of Commerce<br>
+        123 Main Street<br>
+        Calderón, Ecuador<br>
+        info@calderonchamber.org<br>
+        (593) 555-1234</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://instagram.com">
+          <img src="images/instagram.svg" alt="Visit our Instagram profile">
+        </a>
+        <a href="https://twitter.com/yourprofile">
+          <img src="images/twitter.svg" alt="Follow us on Twitter for updates">
+        </a>
+        <a href="https://linkedin.com">
+          <img src="images/linkedin.svg" alt="Connect with us on LinkedIn">
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <p>WDD231 Class Project<br>
+        Gabriel Murillo<br>
+        &copy;<span id="year"></span> Calderón Chamber of Commerce<br>
+        Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

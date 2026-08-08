@@ -1,0 +1,85 @@
+/* ==========================================================================
+   DISCOVER PAGE MEDIUM / TABLET VIEWPORT SYSTEM (Matches 2nd Pic)
+   ========================================================================== */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .discover-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Internal Grid configuration inside each card container */
+  .place-card {
+    padding: 1.75rem;
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Left-side 300px image, right-side text space */
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+  }
+
+  /* Force heading title to span across both grid columns at the top boundary */
+  .place-card h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+  }
+
+  /* Left-aligned fixed dimension image container */
+  .place-card figure {
+    grid-column: 1 / 2;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+
+  .place-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* CRITICAL PLACEMENT: Locks the details box strictly to the right side of the pic */
+  .card-details {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Vertically pushes address away from paragraph */
+  }
+
+  .card-details p {
+    margin: 0 0 1rem 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: #1a1818;
+  }
+
+  .card-details address {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    color: #1a1818;
+    font-size: 1.05rem;
+  }
+
+  /* Action button spans full width across the base layer */
+  .btn-learn {
+    grid-column: 1 / -1;
+    width: 100%;
+    background: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
