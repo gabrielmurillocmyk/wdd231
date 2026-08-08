@@ -16,10 +16,10 @@ export const places = [
   },
   {
     "id": 3,
-    "name": "San José Woodcarving Gallery",
-    "address": "Calle Indanza & Av. El Inca, Calderón, Northern Quito, Ecuador",
-    "description": "Exquisite exhibition space displaying generationally refined master woodcrafts, customized architectural panel designs, and rustic furniture collections carved from local timber in northern Quito.",
-    "image": "images/woodcarving-gallery.webp"
+    "name": "Plaza Vancouver",
+    "address": "Av. Vancouver & Calle Italia, Calderón, Northern Quito, Ecuador",
+    "description": "A popular modern commercial plaza and community hub in northern Quito. It features dynamic open-air retail spaces, local coffee shops, and vibrant dining spots where residents gather for business and weekend leisure.",
+    "image": "images/plaza-vancuover.webp"
   },
   {
     "id": 4,
@@ -51,9 +51,9 @@ export const places = [
   },
   {
     "id": 8,
-    "name": "Oyacoto Eco-Trail Park",
-    "address": "Via Guayllabamba Entrada Oyacoto, Calderón, Northern Quito, Ecuador",
-    "description": "A pristine ecological reserve along the northern edge of Quito's metropolitan district offering safe trail biking systems, natural volcanic rock formations, and wide mountain valley lookouts.",
-    "image": "images/oyacoto-trail.webp"
+    "name": "Jerusalem Protected Forest",
+    "address": "Vía Guayllabamba - Tabacundo, Malchinguí (North of Calderón), Pichincha, Ecuador",
+    "description": "The largest high-altitude dry tropical forest reserve in the northern Andes region. It serves as an ecological sanctuary featuring ancient carob trees, scenic nature hiking trails, birdwatching hotspots, and educational camping grounds.",
+    "image": "images/jerusalem-forest.webp"
   }
 ];
