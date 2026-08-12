@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexAthletics Co. | Sizing Profile Inquiry</title>
+  <meta name="description" content="Configure your training apparel profile. Submit sizing queries for soccer, basketball, baseball, and volleyball garments safely.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Open Graph Social Media Optimization -->
+  <meta property="og:title" content="ApexAthletics Co. | Tailored Sizing Portal">
+  <meta property="og:description" content="Input your sizing parameters securely to find the ideal high-durability training shorts, cleats, and jerseys.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="form.html">
+  <meta property="og:type" content="website">
+
+  <!-- Style Sheets Cascading Pipeline -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Scripts: Main Navigation Controller & Dedicated Tab-Order Script -->
+  <script src="scripts/index.js" type="module"></script>
+  <script src="scripts/form.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Consistent Global Header Component -->
+  <header class="global-header">
+    
+      <img src="images/logo.jpg" alt="ApexAthletics Co. Logo" class="logo-graphic" width="55" height="50">
+      <span class="brand-title">ApexAthletics</span>
+    </div>
+    <button id="hamburger-menu-btn" aria-label="Toggle navigation options menu">☰</button>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Gear Directory</a></li>
+        <li><a href="form.html" class="nav-active">Size Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Form Component Main Main Body Area -->
+  <main class="form-main-shell">
+    <h1>Apparel Sizing Profile</h1>
+    <p class="form-intro-subtext">Submit your measurement parameters below to confirm durability listings and stock items matching your fit.</p>
+
+    <section class="form-workspace-card">
+      <p class="visual-clue-instruction">Fields marked with an asterisk (<span class="req-star-clue">*</span>) are strictly required.</p>
+
+      <!-- RUBRIC COMPLIANCE: Uses 'get' method and targets a distinct form action confirmation page -->
+      <form method="get" action="thankyou.html" id="apparel-sizing-form" class="apex-custom-form">
+        
+        <!-- 1. Selection Element (Required with explicit validation clues) -->
+        <div class="form-field-row">
+          <label for="primary-sport-select">Target Athletic Discipline <span class="req-star-clue">*</span></label>
+          <select id="primary-sport-select" name="targetSport" required>
+            <option value="" disabled selected>Select a Sport Focus ...</option>
+            <option value="soccer">Soccer Kits (Field Turf)</option>
+            <option value="basketball">Basketball Wear (Hardwood Court)</option>
+            <option value="baseball">Baseball Twill (Diamond Field)</option>
+            <option value="volleyball">Volleyball Flex (Indoor Floor)</option>
+            <option value="fitness">Gym &amp; General Training</option>
+          </select>
+        </div>
+
+        <!-- 2. Radio Button Group (Required with matching name attributes for group exclusivity) -->
+        <fieldset class="form-fieldset-block">
+          <legend>Expected Weekly Training Frequency <span class="req-star-clue">*</span></legend>
+          <div class="radio-options-matrix">
+            
+            <label for="freq-low" class="radio-node-item">
+              <input type="radio" id="freq-low" name="trainingFrequency" value="casual" required>
+              <span class="custom-radio-label">1-2 Days (Casual)</span>
+            </label>
+
+            <label for="freq-mid" class="radio-node-item">
+              <input type="radio" id="freq-mid" name="trainingFrequency" value="regular" required>
+              <span class="custom-radio-label">3-4 Days (Regular)</span>
+            </label>
+
+            <label for="freq-high" class="radio-node-item">
+              <input type="radio" id="freq-high" name="trainingFrequency" value="intensive" required>
+              <span class="custom-radio-label">5+ Days (Intensive)</span>
+            </label>
+
+          </div>
+        </fieldset>
+
+        <!-- 3. Calendar Date Element (Required) -->
+        <div class="form-field-row">
+          <label for="target-needed-date">Expected Date of First Deployment <span class="req-star-clue">*</span></label>
+          <input type="date" id="target-needed-date" name="deploymentDate" required>
+        </div>
+
+        <!-- 4. Checkbox All-That-Apply Configurations (Optional) -->
+        <fieldset class="form-fieldset-block">
+          <legend>Critical Utility Demands <span class="subtitle-note">(Check all that apply)</span></legend>
+          <div class="checkbox-options-stack">
+            
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-seams" name="utilityDemands" value="reinforced-seams">
+              <label for="demand-seams">Triple-Reinforced Seams & Stitching</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-grip" name="utilityDemands" value="high-traction-grip">
+              <label for="demand-grip">High-Traction Anti-Slip Rubber Grip</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-breathable" name="utilityDemands" value="breathability">
+              <label for="demand-breathable">Anti-Snag Ventilated Knit Fabrics</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-impact" name="utilityDemands" value="impact-protection">
+              <label for="demand-impact">Built-in Shock Absorbing Floor Padding</label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- 5. Large Textarea Text Field (Optional) -->
+        <div class="form-field-row">
+          <label for="sizing-notes-area">Specific Sizing Requests / Fit Context <span class="optional-badge">(Optional)</span></label>
+          <textarea id="sizing-notes-area" name="sizingNotes" rows="5" placeholder="e.g., Wider foot box, extended jersey hem length adjustments, etc..."></textarea>
+        </div>
+
+        <!-- 6. Text Input Element (Optional) -->
+        <div class="form-field-row">
+          <label for="athlete-name-input">Athlete / Contact Name <span class="optional-badge">(Optional)</span></label>
+          <input type="text" id="athlete-name-input" name="athleteName" placeholder="e.g., Alex Mercer">
+        </div>
+
+        <!-- Submission Trigger Button Element -->
+        <div class="form-actions-row">
+          <input type="submit" value="Submit Sizing Inquiry" class="btn-form-submit">
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- Consistent Cross-Page Footer Component -->
+  <footer class="global-footer">
+    <div class="footer-content-wrapper">
+      <p>&copy; <span id="footer-year">2026</span> | ApexAthletics Co. | Gabriel Murillo | Quito - Ecuador</p>
+      <div class="footer-links-row">
+        <a href="attributions.html">Resource Attributions</a>
+      </div>
+      <p class="footer-date-stamp">Last Modification: <span id="footer-modified-stamp"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

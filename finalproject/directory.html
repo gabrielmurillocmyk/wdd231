@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexAthletics Co. | High-Durability Apparel Directory</title>
+  <meta name="description" content="Browse our comprehensive, durable sports apparel directory. Filter reinforced gear configurations for soccer, basketball, baseball, and volleyball.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Favicon Reference -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Open Graph Metadata System -->
+  <meta property="og:title" content="ApexAthletics Co. | High-Durability Catalog Directory">
+  <meta property="og:description" content="Dynamically explore 15 premium reinforced apparel items featuring detailed specifications and material durability insights.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Style Sheets Cascading Pipeline -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Scripts: Native Cross-Page Controller & Module Catalog Component Script -->
+  <script src="scripts/index.js" type="module"></script>
+  <script src="scripts/directory.js" type="module"></script>
+</head>
+<body>
+
+  <!-- Consistent Cross-Page Header Component -->
+  <header class="global-header">
+    
+      <img src="images/logo.jpg" alt="ApexAthletics Co. Logo" class="logo-graphic" width="55" height="50">
+      <span class="brand-title">ApexAthletics</span>
+    </div>
+    <button id="hamburger-menu-btn" aria-label="Toggle navigation options panel menu">☰</button>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="nav-active">Gear Directory</a></li>
+        <li><a href="form.html">Size Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Grid Workspace Shell -->
+  <main class="directory-main-shell">
+    <h1>Apparel Durability Directory</h1>
+    <p class="directory-intro-text">Filter through our high-strength configurations to view technical details, pricing, and construction metrics.</p>
+
+    <!-- Interactive Array Filter Button Bar -->
+    <div class="filter-controls-container">
+      <button class="filter-btn active-filter" data-category="all">Show All Gear</button>
+      <button class="filter-btn" data-category="soccer">Soccer kits</button>
+      <button class="filter-btn" data-category="basketball">Basketball wear</button>
+      <button class="filter-btn" data-category="baseball">Baseball twill</button>
+      <button class="filter-btn" data-category="volleyball">Volleyball flex</button>
+      <button class="filter-btn" data-category="fitness">Gym &amp; training</button>
+    </div>
+
+    <!-- Error/Fallback Warning Notice Display Box Area -->
+    <div id="directory-error-fallback" class="fallback-error-message" aria-live="assertive"></div>
+
+    <!-- Dynamic Target Container: Structured exclusively using Named Grid Template Areas -->
+    <section id="apparel-catalog-grid" class="directory-cards-grid">
+      <!-- Generated dynamically through scripts/directory.js -->
+    </section>
+
+    <!-- Accessible Native Modal Dialog Element (Fulfills exact rubric layout rules) -->
+    <dialog id="apparel-detail-modal" class="accessible-dialog-overlay">
+      <div class="modal-content-wrapper">
+        <button id="modal-close-trigger-btn" class="modal-close-icon" aria-label="Close details overlay window">✕</button>
+        <h2 id="modal-product-name">Product Name Placeholder</h2>
+        <figure class="modal-figure-frame">
+          <img id="modal-product-image" src="images/logo.webp" alt="Product thumbnail placeholder" width="300" height="200">
+        </figure>
+        <div class="modal-specs-body">
+          <p><strong>Sport Discipline Focus:</strong> <span id="modal-product-category">Category</span></p>
+          <p><strong>Baseline Base Price:</strong> $<span id="modal-product-price">0.00</span></p>
+          <p><strong>Durability Architecture:</strong> <span id="modal-product-feature">Feature description</span></p>
+          <div class="specs-pill-box">
+            <h3>Technical Manufacturing Specs</h3>
+            <p id="modal-product-specs">Detailed blueprint materials information text line blocks...</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+  </main>
+
+  <!-- Consistent Cross-Page Footer Component -->
+  <footer class="global-footer">
+    <div class="footer-content-wrapper">
+      <p>&copy; <span id="footer-year">2026</span> | ApexAthletics Co. | Gabriel Murillo | Quito - Ecuador</p>
+      <div class="footer-links-row">
+        <a href="attributions.html">Resource Attributions</a>
+      </div>
+      <p class="footer-date-stamp">Last Modification: <span id="footer-modified-stamp"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

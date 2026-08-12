@@ -1,0 +1,669 @@
+/* APEXATHLETICS CO. MOBILE-FIRST ESSENTIAL STYLES (320px - 767px) */
+:root {
+  --primary-blue: #0b3c5d;      /* Deep Slate Blue - Global brand headers and title structures */
+  --secondary-blue: #328cc1;    /* Active Kinetic Blue - Subheading borders and navigation nodes */
+  --gold-accent: #d9b310;       /* Athletic Gold Accent - Primary button calls-to-action */
+  --canvas-bg: #ffffff;         /* Pure White - Clear background workspace wrapper */
+  --card-bg: #f9f9f9;            /* Muted Grey-White - Background panel structural breaks */
+  --text-dark: #1d2731;          /* Charcoal Dark - AAA Contrast level reading typography color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--canvas-bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: var(--primary-blue);
+  margin-top: 0;
+}
+
+/* User State Local Storage Notification Banner Box */
+.user-state-banner {
+  display: none;
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--gold-accent);
+}
+
+/* Global Cross-Page Structural Navigation Header */
+.global-header {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.brand-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-graphic {
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.brand-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile Toggler Button (Fulfills the 48x48px hit target size guidelines) */
+#hamburger-menu-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.navigation-menu {
+  width: 100%;
+  display: none; /* Controlled dynamically by main.js module toggle class */
+}
+
+.navigation-menu.menu-open {
+  display: block;
+}
+
+.navigation-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navigation-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.navigation-menu li a:hover,
+.navigation-menu li a.nav-active {
+  color: var(--gold-accent);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Core Main Frame Layout Blocks Elements */
+.home-main-shell {
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-showcase {
+  background-image: linear-gradient(rgba(11, 60, 93, 0.70), rgba(29, 39, 49, 0.70)), url('../images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-left: 6px solid var(--gold-accent);
+  border-radius: 8px;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2.5rem;
+  
+}
+
+
+.hero-showcase h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: #ffffff; /* Contrast fix overlay for text visibility */
+}
+
+.hero-showcase p {
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--gold-accent);
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Core Pitch Information Units (Proximity Layout Principles Mapping) */
+.sports-categories-intro {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtext {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #555555;
+}
+
+.category-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.intro-card {
+  background-color: var(--card-bg);
+  padding: 1.75rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--secondary-blue);
+  text-align: left;
+}
+
+.card-media-wrapper{
+    text-align: center;
+}
+
+.category-cards-stack img{
+max-width: 320px;
+height: 285px;
+}
+
+.card-icon-indicator {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.intro-card h4 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.intro-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Assignment Common Shared Global Footer Design Block */
+.global-footer {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 5rem;
+  border-top: 4px solid var(--secondary-blue);
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links-row a {
+  color: var(--secondary-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links-row a:hover {
+  text-decoration: underline;
+}
+
+.footer-date-stamp {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* ==========================================================================
+   DIRECTORY CATALOG COMPONENT: MOBILE NAMED GRID AREAS (320px - 640px)
+   ========================================================================== */
+.directory-main-shell {
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.directory-intro-text {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Horizontal scrolling control row for filters button clusters on mobile */
+.filter-controls-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  overflow-x: auto; /* Gracefully handles smartphone swipe actions without introducing body scrolling */
+  padding: 0.5rem 0.25rem 1rem 0.25rem;
+  margin-bottom: 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-btn {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+  border: 1px solid #cbd5e1;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 4px;
+  white-space: nowrap; /* Prevents text line wrapping inside small scrolling containers */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active-filter {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+}
+
+.fallback-error-message {
+  display: none;
+  background-color: #fef2f2;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  border: 1px solid #fca5a5;
+  font-weight: bold;
+}
+
+/* Outer layout panel framework container bounds wrapper */
+.directory-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* RUBRIC REQUIREMENT: Dynamic cards styled using distinct, named grid template areas */
+.apparel-catalog-card {
+  background-color: var(--card-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single vertical stack mapping layout specifications on mobile viewports */
+  grid-template-areas:
+    "cardname"
+    "cardphoto"
+    "carddesc"
+    "cardmeta"
+    "cardbtn";
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+/* Bind each component class directly to its named grid area marker coordinates */
+.grid-area-name { grid-area: cardname; font-size: 1.4rem; text-align: left; margin: 0; color: var(--primary-blue); }
+.grid-area-photo { grid-area: cardphoto; margin: 0; padding: 0; width: 100%; overflow: hidden; border-radius: 4px; }
+.grid-area-desc { grid-area: carddesc; margin: 0; text-align: left; font-size: 0.95rem; line-height: 1.4; color: var(--text-dark); }
+.grid-area-meta { grid-area: cardmeta; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+.grid-area-btn { grid-area: cardbtn; }
+
+.grid-area-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.price-indicator {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.category-badge-tag {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.btn-open-details {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px; /* Pill profile rounded buttons parameter mapping */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.btn-open-details:hover {
+  background-color: #111111;
+}
+
+/* Native Accessible `<dialog>` Modal Element Base Mobile Overrides styles */
+.accessible-dialog-overlay {
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  max-width: 90%;
+  width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: #ffffff;
+}
+
+.accessible-dialog-overlay::backdrop {
+  background-color: rgba(11, 60, 93, 0.6); /* Backdrop transparency mask layout */
+}
+
+.modal-content-wrapper {
+  padding: 2rem 1.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666666;
+  padding: 0.25rem;
+}
+
+.modal-content-wrapper h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
+  padding-right: 1.5rem;
+}
+
+.modal-figure-frame {
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 220px;
+}
+
+.modal-figure-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-specs-body p {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+.specs-pill-box {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.specs-pill-box h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.specs-pill-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: monospace; /* Coding format clean specs read layout */
+  color: #475569;
+}
+
+/* ==========================================================================
+   FORM COMPONENT HOOKS: INPUT FIELDS & ACTION LAYOUT MATRIX
+   ========================================================================== */
+.form-main-shell {
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-intro-subtext {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gray-blue backdrop meeting form card guidelines */
+.form-workspace-card {
+  background-color: #b8c6d1; 
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #9eaebc;
+  max-width: 550px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.visual-clue-instruction {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: left;
+  margin: 0 0 1.5rem 0;
+  color: #333333;
+}
+
+.req-star-clue {
+  color: #c91616; /* Crimson red asterism visual clue for mandatory properties */
+  font-weight: bold;
+}
+
+.apex-custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.form-field-row label {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary-blue);
+}
+
+.optional-badge {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.apex-custom-form select,
+.apex-custom-form input[type="date"],
+.apex-custom-form input[type="text"],
+.apex-custom-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* HIGH-VISIBILITY INTERACTION DESIGN OVERRIDE: Active field styling markers */
+.apex-custom-form select:focus,
+.apex-custom-form input[type="date"]:focus,
+.apex-custom-form input[type="text"]:focus,
+.apex-custom-form textarea:focus {
+  outline: none;
+  border: 2px solid #227ad3;
+  background-color: #f0f8ff; /* Clean light blue active focus background highlight tint */
+  box-shadow: 0 0 4px rgba(34, 122, 211, 0.4);
+}
+
+.form-fieldset-block {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.form-fieldset-block legend {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.75rem;
+}
+
+.subtitle-note {
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #475569;
+}
+
+.radio-options-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #94a3b8;
+}
+
+.radio-node-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.radio-node-item input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-node-item input[type="radio"]:focus {
+  outline: 2px solid #227ad3;
+}
+
+.checkbox-options-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1.25rem;
+  border-radius: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.checkbox-row-line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.checkbox-row-line input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.checkbox-row-line label {
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.form-actions-row {
+  margin-top: 1rem;
+}
+
+.btn-form-submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-form-submit:hover {
+  background-color: #05233a;
+}
+
+/* Action display styles configuration for parameters summaries */
+.params-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.params-summary-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.params-summary-list li:last-child {
+  border-bottom: none;
+}

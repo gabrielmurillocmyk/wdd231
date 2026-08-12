@@ -1,0 +1,239 @@
+/* APEXATHLETICS CO. WIDESCREEN DESKTOP DESIGN */
+@media (min-width: 768px) {
+  
+  /* HEADER ALIGNMENT: Rearranges vertical nodes into an elegant horizontal bar row */
+  .global-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Completely deactivates mobile-only interactive hamburger button elements */
+  #hamburger-menu-btn {
+    display: none;
+  }
+
+  /* NAVIGATION ROW LAYOUT: Displays list links horizontally across desktop monitors width */
+  .navigation-menu {
+    display: block !important;
+    width: auto;
+  }
+
+  .navigation-menu ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .navigation-menu li a {
+    font-size: 1.05rem;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    width: auto;
+  }
+
+  /* Repetition UI Underline indicator accent on active wayfinding link */
+  .navigation-menu li a.nav-active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0.75rem;
+    right: 0.75rem;
+    height: 3px;
+    background-color: var(--gold-accent);
+    border-radius: 2px;
+  }
+
+  /* MAIN WORKSPACE CANVAS SHELL: Prevents lines from stretching out awkwardly */
+  .home-main-shell {
+    max-width: 87%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .hero-showcase {
+    padding: 5rem 4rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  }
+
+  .hero-showcase h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  .hero-showcase p {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin-bottom: 2rem;
+  }
+
+  /* PROXIMITY & GRID SEPARATION SYSTEM: Demonstration of non-stacked layout mastery */
+  .sports-categories-intro {
+    margin-top: 5rem;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtext {
+    font-size: 1.15rem;
+    margin-bottom: 3rem;
+  }
+
+  /* CSS Flexbox card distribution - breaks out from simple mobile stacked structures */
+  .category-cards-stack {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .intro-card {
+    flex: 1; /* Assigns perfect, balanced spatial alignment weight distributions */
+    padding: 3rem 2.25rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(11, 60, 93, 0.07);
+  }
+
+  /* FOOTER ALIGNMENT SYSTEM: Forms a clean balanced horizontal metadata bar row */
+  .footer-content-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-content-wrapper p,
+  .footer-links-row {
+    margin: 0;
+  }
+}
+
+@media (min-width: 641px) {
+  
+  .directory-main-shell {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+  }
+
+  .directory-intro-text {
+    font-size: 1.15rem;
+  }
+
+  /* Center the controls array row on desktop monitor canvases */
+  .filter-controls-container {
+    justify-content: center;
+    overflow-x: visible; /* Removes mobile-only swiping overflows */
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* TRANSFORMATION: Reconfigures card interior blocks horizontally via Named Areas */
+  .apparel-catalog-card {
+    padding: 2rem;
+    grid-template-columns: 300px 1fr; /* Image locks to left column track, descriptions gain right space */
+    grid-template-areas:
+      "cardphoto cardname"
+      "cardphoto carddesc"
+      "cardphoto cardmeta"
+      "cardbtn   cardbtn"; /* Button spans across full lower row boundary */
+    column-gap: 2rem;
+    row-gap: 1.25rem;
+  }
+
+  .grid-area-name { font-size: 1.6rem; }
+  
+  .grid-area-photo {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+  }
+  
+  .grid-area-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Practicing robust interactive image transitions guidelines */
+  .apparel-catalog-card:hover .grid-area-photo img {
+    transform: scale(1.05);
+  }
+
+  .grid-area-desc { font-size: 1.05rem; }
+  .grid-area-meta { border-bottom: none; padding-bottom: 0; }
+  
+  .btn-open-details {
+    padding: 0.9rem;
+  }
+}
+
+/* WIDESCREEN GRID ASSIGNMENTS THRESHOLDS */
+@media (min-width: 1025px) {
+  /* Transforms single card column stream into a multi-column desktop showcase grid matrix */
+  .directory-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Distributes items cleanly side-by-side */
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .apparel-catalog-card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  
+  .accessible-dialog-overlay {
+    width: 500px;
+  }
+}
+
+/*FORM COMPONENT: DESKTOP RESPONSIVE REFINEMENTS */
+@media (min-width: 641px) {
+  /* Expands the form workspace shell container width for desktop viewports */
+  .form-main-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+  }
+
+  /* Enhances structural space inside the card to satisfy alignment and proximity guidelines */
+  .form-workspace-card {
+    max-width: 650px;
+    padding: 3.5rem;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  /* REARRANGEMENT: Shifts the training frequency choices into a balanced horizontal row layout */
+  .radio-options-matrix {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  
+  .radio-node-item {
+    flex: 1;
+  }
+
+  /* Spreads the checkbox options array into a clean two-column grid framework on wide screens */
+  .checkbox-options-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+}
+

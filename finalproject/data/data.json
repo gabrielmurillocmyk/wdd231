@@ -1,0 +1,137 @@
+[
+  {
+    "id": "soc-01",
+    "name": "Pitch-Master Reinforced Cleats",
+    "category": "soccer",
+    "price": "89.99",
+    "image": "images/soc-01.webp",
+    "feature": "Dual-stitched leather upper with abrasion-resistant TPU outsoles for turf durability.",
+    "specs": "Material: Full-Grain Leather | Weight: 240g | Sole: Molded TPU Cleats | Fit: Secure Lock"
+  },
+  {
+    "id": "soc-02",
+    "name": "Tornado Knit Training Shirt",
+    "category": "soccer",
+    "price": "34.99",
+    "image": "images/soc-02.webp",
+    "feature": "Heavy-duty interlock knit polyester that resists pulls and grass stains during tackles.",
+    "specs": "Material: 100% Interlock Polyester | Knit: Anti-Snag | Wash: Machine Safe | Stretch: 2-Way"
+  },
+  {
+    "id": "soc-03",
+    "name": "Fortress Double-Ply Shin Guards",
+    "category": "soccer",
+    "price": "24.99",
+    "image": "images/soc-03.webp",
+    "feature": "Impact-absorbing EVA foam backing with a hard composite shell built for high-impact protection.",
+    "specs": "Shell: Polypropylene | Backing: High-Density EVA Foam | Straps: Dual Elastic | Certification: CE Certified"
+  },
+  {
+    "id": "bsk-01",
+    "name": "Ankle-Guard High-Top Sneakers",
+    "category": "basketball",
+    "price": "119.99",
+    "image": "images/bsk-01.webp",
+    "feature": "Padded lateral collar and high-traction gum rubber soles designed to eliminate court slipping.",
+    "specs": "Collar: Padded High-Top | Sole: Non-Marking Gum Rubber | Upper: Ballistic Mesh | Support: Lateral TPU Shank"
+  },
+  {
+    "id": "bsk-02",
+    "name": "Court-Drive Heavy Mesh Shorts",
+    "category": "basketball",
+    "price": "29.99",
+    "image": "images/bsk-02.webp",
+    "feature": "Dual-layered open mesh fabric featuring triple-reinforced seams for aggressive indoor training.",
+    "specs": "Layers: Dual-Layer Mesh | Seams: Triple-Needle Stitched | Waistband: Internal Drawcord | Pockets: Deep Side Pockets"
+  },
+  {
+    "id": "bsk-03",
+    "name": "Apex Pro Compression Tights",
+    "category": "basketball",
+    "price": "39.99",
+    "image": "images/bsk-03.webp",
+    "feature": "Thick elastane matrix providing continuous muscular compression and reinforced friction zones.",
+    "specs": "Material: 82% Nylon, 18% Elastane | Panel: Double-Knee Padding | Flatlock Seams: Yes | Length: Full-Length"
+  },
+  {
+    "id": "bsb-01",
+    "name": "Diamond Sliding Shorts",
+    "category": "baseball",
+    "price": "44.99",
+    "image": "images/bsb-01.webp",
+    "feature": "Side impact foam panels constructed to prevent field abrasions when sliding into base bags.",
+    "specs": "Padding: Targeted Foam Panels | Fabric: Moisture-Wicking | Cup Pocket: Built-in | Guard: High-Abrasion Hip Mesh"
+  },
+  {
+    "id": "bsb-02",
+    "name": "Vanguard Breathable Jersey",
+    "category": "baseball",
+    "price": "49.99",
+    "image": "images/bsb-02.webp",
+    "feature": "Traditional full-button front profile engineered with a heavy anti-tear cotton-poly blend weave.",
+    "specs": "Style: Full-Button Front | Fabric: 60% Cotton, 40% Polyester | Knit: Heavy Twill Weave | Fit: Athletic Relaxed"
+  },
+  {
+    "id": "bsb-03",
+    "name": "Grip-Max Synthetic Batting Gloves",
+    "category": "baseball",
+    "price": "32.99",
+    "image": "images/bsb-03.webp",
+    "feature": "Premium synthetic palms with double-layered thumb boxes for maximum vibration isolation.",
+    "specs": "Palm: Digital Synthetic Grip | Closure: Neoprene Wrist Strap | Reinforcement: Double Thumb Patch | Venting: Finger Slits"
+  },
+  {
+    "id": "vly-01",
+    "name": "Impact-Shield Knee Pads",
+    "category": "volleyball",
+    "price": "27.99",
+    "image": "images/vly-01.webp",
+    "feature": "Contoured polyurethane padding designed for continuous floor impact defense during dives.",
+    "specs": "Padding: Polyurethane Gel Foam | Sleeve: Elastic Knit | Profile: Low-Profile Ergonomic | Finish: Anti-Odor"
+  },
+  {
+    "id": "vly-02",
+    "name": "Spike-Velocity Court Shoes",
+    "category": "volleyball",
+    "price": "104.99",
+    "image": "images/vly-02.webp",
+    "feature": "Sub-midsole gel cushioning compounds tailored specifically for explosive vertical jump impacts.",
+    "specs": "Cushion: High-Impact Gel | Outsole: Non-Marking Traction | Upper: Air-Mesh | Weight: 280g"
+  },
+  {
+    "id": "vly-03",
+    "name": "Flex-Reach Sleeveless Top",
+    "category": "volleyball",
+    "price": "24.99",
+    "image": "images/vly-03.webp",
+    "feature": "Extended flatlock arm openings to allow maximum shoulder extension with zero chafing.",
+    "specs": "Style: Sleeveless Crewneck | Seams: Flatlock Frictionless | Length: Extended Tail | Fabric: Polyester Blend"
+  },
+  {
+    "id": "fit-01",
+    "name": "Iron-Weave Gym Stringer",
+    "category": "fitness",
+    "price": "21.99",
+    "image": "images/fit-01.webp",
+    "feature": "Reinforced raw-edge seams optimized for intense daily powerlifting and outdoor training.",
+    "specs": "Cut: Deep Stringer Back | Fabric: Tri-Blend Heavy Cotton | Seams: Double-Stitched Edge | Breathable: Yes"
+  },
+  {
+    "id": "fit-02",
+    "name": "Endurance All-Weather Jacket",
+    "category": "fitness",
+    "price": "64.99",
+    "image": "images/fit-02.webp",
+    "feature": "Wind-resistant tight ripstop outer lining featuring clean, secure zippered pockets.",
+    "specs": "Shell: Ripstop Polyester | Resistance: Water & Wind | Pockets: 3 Zippered | Hood: Packable Roll-Up"
+  },
+  {
+    "id": "fit-03",
+    "name": "Apex Heavy-Duty Lift Shoes",
+    "category": "fitness",
+    "price": "129.99",
+    "image": "images/fit-03.webp",
+    "feature": "Flat rubber platform bases with high midfoot straps to maximize grounding force during lifts.",
+    "specs": "Drop: 0mm Flat Platform | Closure: Dual Lace & Strap | Midsole: High-Density TPU | Heel: Reinforced Counter"
+  }
+]

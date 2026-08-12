@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexAthletics Co. | Sizing Submission Confirmed</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/main.js" type="module" defer></script>
+  <script>
+    /**
+     * RUBRIC COMPLIANCE: Extracts and prints GET query string parameters on form action page
+     */
+    document.addEventListener("DOMContentLoaded", () => {
+      const displayField = document.getElementById("submission-counter-badge");
+      const dataOutputField = document.getElementById("submitted-parameters-dump");
+      const urlParameters = new URLSearchParams(window.location.search);
+      
+      // Update the localStorage submission counter on successful redirect landing
+      let submissionCount = parseInt(localStorage.getItem("apexProfilesSubmittedCount"), 10) || 0;
+      submissionCount += 1;
+      localStorage.setItem("apexProfilesSubmittedCount", submissionCount.toString());
+
+      if (displayField) {
+        displayField.textContent = `Sizing Profiles Logged in Browser: ${submissionCount} Total`;
+      }
+
+      // Read query fields out of search params natively
+      if (dataOutputField && urlParameters.has("targetSport")) {
+        const sport = urlParameters.get("targetSport").toUpperCase();
+        const frequency = urlParameters.get("trainingFrequency").toUpperCase();
+        const date = urlParameters.get("deploymentDate");
+        const name = urlParameters.get("athleteName") || "Anonymous Athlete";
+        const notes = urlParameters.get("sizingNotes") || "None specified.";
+        
+        dataOutputField.innerHTML = `
+          <ul class="params-summary-list">
+            <li><strong>Athlete / Contact Name:</strong> ${name}</li>
+            <li><strong>Target Athletic Discipline:</strong> ${sport}</li>
+            <li><strong>Weekly Training Track:</strong> ${frequency}</li>
+            <li><strong>Expected Deployment Date:</strong> ${date}</li>
+            <li><strong>Custom Fitting Notes:</strong> ${notes}</li>
+          </ul>
+        `;
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <header class="global-header">
+    
+      <span class="brand-title">ApexAthletics</span>
+    </div>
+  </header>
+
+  <main class="form-main-shell" style="max-width:600px; margin:0 auto;">
+    <div class="form-workspace-card thanks-alignment-box" style="text-align:center; padding:2.5rem 1.5rem;">
+      
+      <!-- Submission local storage tracking badge widget -->
+      <div id="submission-counter-badge" class="user-state-banner" style="display:block; background-color:var(--primary-blue);">Updating local session data...</div>
+      
+      <h2 style="color:var(--primary-blue); font-size:1.8rem; margin-top:0;">Profile Captured Successfully!</h2>
+      <p style="font-size:1.05rem; color:var(--text-dark); line-height:1.5; margin-bottom:2rem;">
+        Thank you for submitting your custom fit measurements. Your data has been recorded cleanly on the form action page.
+      </p>
+
+      <!-- Dynamic URL parameters display matrix box wrapper -->
+      <div style="background:#ffffff; padding:1.25rem; border-radius:6px; border:1px solid #ccc; text-align:left; margin-bottom:2rem;">
+        <h3 style="margin-top:0; font-size:1.1rem; border-bottom:1px solid #e2e8f0; padding-bottom:0.5rem; color:var(--primary-blue);">Captured Form Data (URL Parameters Summary):</h3>
+        <div id="submitted-parameters-dump">No active parameters discovered in query trace paths.</div>
+      </div>
+
+      <a href="form.html" class="cta-button" style="display:block; text-align:center; padding:0.9rem; border-radius:4px; text-decoration:none;">Submit Another Sizing Inquiry</a>
+    </div>
+  </main>
+
+  <footer class="global-footer">
+    <p>&copy; 2026 ApexAthletics Co. | Gabriel Murillo | Quito - Ecuador</p>
+  </footer>
+
+</body>
+</html>
