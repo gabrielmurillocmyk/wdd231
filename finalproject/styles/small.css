@@ -111,7 +111,7 @@ h1, h2, h3, h4 {
 .navigation-menu li a:hover,
 .navigation-menu li a.nav-active {
   color: var(--gold-accent);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(3, 7, 61, 0.808);
   border-radius: 4px;
 }
 
@@ -120,8 +120,18 @@ h1, h2, h3, h4 {
   padding: 1.5rem 1rem;
   box-sizing: border-box;
 }
+.main-page-title {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 0.5px;
+}
 
 .hero-showcase {
+  background-color: var(--primary-blue);
   background-image: linear-gradient(rgba(11, 60, 93, 0.70), rgba(29, 39, 49, 0.70)), url('../images/hero-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -232,7 +242,7 @@ height: 285px;
 }
 
 .footer-links-row a {
-  color: var(--secondary-blue);
+  color: var(--card-bg);
   text-decoration: none;
   font-weight: bold;
 }
@@ -293,7 +303,7 @@ height: 285px;
 .filter-btn.active-filter {
   background-color: var(--primary-blue);
   color: #ffffff;
-  border-color: var(--primary-blue);
+  border-color: var(--text-dark);
 }
 
 .fallback-error-message {
