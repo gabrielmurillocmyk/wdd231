@@ -283,7 +283,6 @@ height: 285px;
   overflow-x: auto; /* Gracefully handles smartphone swipe actions without introducing body scrolling */
   padding: 0.5rem 0.25rem 1rem 0.25rem;
   margin-bottom: 2rem;
-  -webkit-overflow-scrolling: touch;
 }
 
 .filter-btn {
